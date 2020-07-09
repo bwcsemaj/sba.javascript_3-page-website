@@ -1,0 +1,9 @@
+#paragraphs:first-child{
+    color: pink;
+}
+div > p:nth-child(2){
+    color: red;
+}
+div > p:last-child{
+    color: green;
+}

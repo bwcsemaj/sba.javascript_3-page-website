@@ -7,13 +7,6 @@ img {
     height: auto;
 }
 
-div > img {
-    max-width: 100%;
-    height: auto;
-    pointer-events: none;
-    opacity: .2;
-}
-
 .center-holder{
     position: relative;
 }

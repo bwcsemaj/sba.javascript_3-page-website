@@ -38,7 +38,7 @@
 
     <!-- START NAVIGATION -->
     <!-- |LOGO|NAME|CONTACT|ABOUT -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"
+    <nav class="navbar navbar-expand-lg navbar-dark"
         style="background-image: url(https://entropymag.org/wp-content/uploads/2014/10/outer-space-wallpaper-pictures.jpg);">
         <a class="navbar-brand" href="/">
             <img id="logo"
@@ -64,58 +64,66 @@
 
     <!-- START CENTER CONTENT -->
     <!-- Major help came from https://mdbootstrap.com/docs/jquery/forms/contact/ -->
-    <div class="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
-        <div class="row"></div>
-        <h2 class="h1 text-center">Enter in your message here.</h2>
-
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <form id="contact-form">
-                    <div class="row">
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                            <div class="form">
-                                <input type="text" id="name" name="name" class="form-control" placeholder="NAME">
-                                <br>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                            <div class="form">
-                                <input type="text" id="email" name="email" class="form-control" placeholder="EMAIL">
-                                <br></div>
-                        </div>
-                    </div>
+    <br><br>
+    <div class="container">
+        <div class="container col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+            <div class="col">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="background: darkgray; border-radius: 10px;">
+                    <div class="row"></div>
+                    <h2 class="h1 text-center"><b>CONTACT FORM</b></h2>
+            
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <select id="subject" class="form-control">
-                                <option selected>QUESTION</option>
-                                <option>COMPLAINT</option>
-                                <option>DAB</option>
-                            </select>
-                            <br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="md-form">
-                                <textarea type="text" id="description" name="description" rows="2"
-                                    class="form-control lg-textarea"
-                                    placeholder="ENTER A DESCRIPTION OF YOUR PROBLEM..."></textarea>
+                            <form id="contact-form">
+                                <div class="row">
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        <div class="form">
+                                            <input type="text" id="name" name="name" class="form-control" placeholder="NAME">
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        <div class="form">
+                                            <input type="text" id="email" name="email" class="form-control" placeholder="EMAIL">
+                                            <br></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <select id="subject" class="form-control">
+                                            <option selected>QUESTION</option>
+                                            <option>COMPLAINT</option>
+                                            <option>DAB</option>
+                                        </select>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="md-form">
+                                            <textarea type="text" id="description" name="description" rows="2"
+                                                class="form-control lg-textarea"
+                                                placeholder="ENTER A DESCRIPTION OF YOUR PROBLEM..."></textarea>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                            </form>
+            
+                            <div class="text-center">
+                                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">SEND</a>
                             </div>
-                            <br>
+                            <div class="status"></div>
                         </div>
+            
                     </div>
-                </form>
-
-                <div class="text-center">
-                    <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">SEND</a>
+            
                 </div>
-                <div class="status"></div>
             </div>
-
         </div>
-
     </div>
-    <!--Section: Contact v.2-->
+       
+
     <!-- END CENTER CONTENT -->
 
     <!-- =================END FOOTER--========================= -->

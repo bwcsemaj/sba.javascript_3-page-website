@@ -26,6 +26,10 @@ body {
     padding: 0px;
 }
 
+nav{
+    height:55px !important;
+}
+
 p{
     background: black;
 }

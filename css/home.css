@@ -1,0 +1,45 @@
+#select-image{
+    box-shadow: white;
+    opacity: 1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    pointer-events: none;
+    opacity: .2;
+}
+
+.center-holder{
+    position: relative;
+}
+
+#center-container{
+    z-index: 1;
+    position: absolute;
+}
+
+#center-top{
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 5em;
+    vertical-align: middle;
+    line-height: 5em;
+    box-shadow: white;
+    opacity: 0;
+    pointer-events: none;
+    animation-name: show;
+    animation-duration: 7000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes show{
+    from { 
+        opacity: 0;
+    } to { 
+        opacity: 1;
+    }
+}

@@ -10,6 +10,7 @@
   <meta name="author" content="James Covington">
 
   <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/home.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -19,52 +20,128 @@
 </head>
 <!-- ----------------------END HEADER -------------------------------- -->
 
-
-
-
-
-
-
-
-
-
-
-
 <!-- ----------------------------------START BODY------------------------------ -->
 
 <body>
   <!-- body begins here -->
 
   <!-- START NAVIGATION -->
-  <!-- |LOGO|NAME|HOME|ABOUT|CONTACT -->
-  <div id="top-navigation-container" class="d-flex flex-row">
-    <div class="row">
-      <div id="logo" style="background-color: aqua;"></div>
-      <div id="name-of-company" style="background-color: purple;">NAME OF COMPANY</div>
-      <div id="home">HOME</div>
-      <div id="about">ABOUT</div>
-      <div id="contact">CONTACT</div>
+  <!-- |LOGO|NAME|CONTACT|ABOUT -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark"
+    style="background-image: url(https://entropymag.org/wp-content/uploads/2014/10/outer-space-wallpaper-pictures.jpg);">
+    <a class="navbar-brand" href="/">
+      <img id="logo"
+        src="https://purepng.com/public/uploads/large/purepng.com-earthearthplanetglobethird-planet-from-the-sun-1411526987450icb4m.png"
+        style=" width:65px;height:65px" style="background: transparent;">
+    </a>
+
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">VACATION PICKER</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">ABOUT</a>
+        </li>
+      </ul>
     </div>
-  </div>
+  </nav>
   <!-- END NAVIGATION -->
 
   <!-- START CENTER CONTENT -->
-  <div id="center-container" class="container-fluid">
-    <div class="row">
-      <img src="https://images.unsplash.com/photo-1519070994522-88c6b756330e" alt="Could not find image" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-      <img src="https://images.unsplash.com/photo-1523253112282-26697ead8398" alt="Could not find image" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-      <img src="https://images.unsplash.com/photo-1564956029070-8707bcb48f93" alt="Could not find image" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-      <img src="https://images.unsplash.com/photo-1528292536883-0916382e7ab5" alt="Could not find image" class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-      <img src="https://images.unsplash.com/photo-1579762040557-a69faf70a2e3" alt="Could not find image" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-      <img src="https://images.unsplash.com/photo-1521738177080-fdfcc37d6d82" alt="Could not find image" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-      <img src="https://images.unsplash.com/photo-1489641223343-c6b77f6b0bf6" alt="Could not find image" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+  <div class="center-holder">
+    <div id="center-container" class="container-fluid">
+      <div id="image-container" class="row">
+        <img
+          src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Could not find image" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ml-0 p-1" name="Greenland">
+        <img
+          src="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Could not find image" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ml-0 p-1" name="New York">
+        <img
+          src="https://images.pexels.com/photos/132037/pexels-photo-132037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Could not find image" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ml-0 p-1" name="Minnesota">
+        <img
+          src="https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Could not find image" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ml-0 p-1" name="Kentucky">
+        <img
+          src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Could not find image" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ml-0 p-1" name="North Carolina">
+        <img
+          src="https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Could not find image" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ml-0 p-1" name="South Carolina">
+        <img
+          src="https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Could not find image" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ml-0 p-1" name="Texas">
+        <img
+          src="https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Could not find image" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ml-0 p-1" name="Washington">
+        <img
+          src="https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Could not find image" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ml-0 p-1" name="North Dakota">
+        <img
+          src="https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Could not find image" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ml-0 p-1" name="Ohio">
+        <img
+          src="https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Could not find image" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ml-0 p-1" name="Iowa">
+        <img
+          src="https://images.pexels.com/photos/917494/pexels-photo-917494.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Could not find image" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ml-0 p-1" name="Nevada">
+        <img
+          src="https://images.pexels.com/photos/371589/pexels-photo-371589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Could not find image" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ml-0 p-1" name="Oregon">
+        <img
+          src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Could not find image" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ml-0 p-1" name="Kansas">
+        <img
+          src="https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Could not find image" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ml-0 p-1" name="Louisiana">
+        <img
+          src="https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Could not find image" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ml-0 p-1" name="Florida">
+        <img
+          src="https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Could not find image" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ml-0 p-1" name="Colorado">
+        <img
+          src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Could not find image" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ml-0 p-1" name="Hawaii">
+        <img
+          src="https://images.pexels.com/photos/360912/pexels-photo-360912.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Could not find image" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ml-0 p-1" name="Maine">
+        <img
+          src="https://images.pexels.com/photos/1438248/pexels-photo-1438248.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Could not find image" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ml-0 p-1" name="Utah">
+        <img
+          src="https://images.pexels.com/photos/748626/pexels-photo-748626.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Could not find image" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ml-0 p-1" name="New Mexico">
+        <img
+          src="https://images.pexels.com/photos/207130/pexels-photo-207130.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Could not find image" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ml-0 p-1" name="Montana">
+        <img
+          src="https://images.pexels.com/photos/68147/waterfall-thac-dray-nur-buon-me-thuot-daklak-68147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Could not find image" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ml-0 p-1" name="Arizona">
+        <img
+          src="https://images.pexels.com/photos/210243/pexels-photo-210243.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          alt="Could not find image" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ml-0 p-1" name="Illinois">
+      </div>
+
     </div>
+    <div id="center-top">
+        HELLO WORLD;
+    </div>
+
+
   </div>
-  <!-- END CENTER CONTENT -->
+
 
   <!-- =================END FOOTER--========================= -->
   <footer>
     <script type="text/javascript" src="./js/footer-functions.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
   </footer>
   <!-- ==================START FOOTER ======================= -->
 

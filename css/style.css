@@ -30,6 +30,21 @@ body {
     height: 65px;
     width: 65px;
 }
+#logo:hover{
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin{
+    from { 
+        transform: rotate(0deg); 
+    } to { 
+        transform: rotate(360deg); 
+    }
+}
+
 /* Scale images  https://stackoverflow.com/questions/16217355/automatically-resize-images-with-browser-size-using-css*/
 img {
     max-width: 100%;

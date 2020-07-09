@@ -43,11 +43,17 @@ window.onload = (event) => {
 };
 
 var previousSelectedImageElement = null;
+var centerTopTextElement = null;
 var count = 0;
 const MAX_RANDOM_COUNT = 10;
 //Select Random Element and Change CSS
 function randomStep() {
+
     //Reset Previous
+    if(centerTopTextElement != null){
+        centerTopTextElement.id = "";
+    }
+
     if (previousSelectedImageElement != null) {
         previousSelectedImageElement.id = "";
     }
@@ -59,7 +65,7 @@ function randomStep() {
     imageElement.id = "select-image";
 
     //Update Center Top Text to display the name of vacation;
-    let centerTopTextElement = document.getElementsByName("center-top")[0];
+    centerTopTextElement = document.getElementsByName("center-top")[0];
     centerTopTextElement.textContent = randomVacation.name;
 
     count++;
@@ -71,7 +77,7 @@ function randomStep() {
         clearInterval(randomIntervalId);
         running = false;
         centerTopTextElement.id = "center-top";
-    return;
+        return;
     }
 }
 

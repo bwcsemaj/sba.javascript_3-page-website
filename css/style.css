@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 * {
     /*https://stackoverflow.com/questions/7008039/css-html5-why-does-my-body-have-a-spacing-at-the-top*/
     /* margin: 0px;
@@ -5,6 +7,7 @@
     border-width: 0px; */
     /*https://stackoverflow.com/questions/30489594/prevent-100vw-from-creating-horizontal-scroll/30504010*/
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 html {

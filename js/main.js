@@ -7,7 +7,7 @@ class Vacaction {
 
 var running = false;
 var vacations = new Array();
-var intervalId = null;
+var randomIntervalId = null;
 
 window.onload = (event) => {
     //Initialize imageElements
@@ -36,7 +36,7 @@ window.onload = (event) => {
         }
         running = true;
         console.log(running);
-        intervalId = setInterval(step, 500);
+        randomIntervalId = setInterval(randomStep, 500);
     };
 
 
@@ -44,33 +44,37 @@ window.onload = (event) => {
 
 var previousSelectedImageElement = null;
 var count = 0;
-const MAX_COUNT = 10;
+const MAX_RANDOM_COUNT = 10;
 //Select Random Element and Change CSS
-function step() {
-    console.log("STEP" + count);
+function randomStep() {
     //Reset Previous
     if (previousSelectedImageElement != null) {
         previousSelectedImageElement.id = "";
     }
 
-    //Stop loop
-    if (MAX_COUNT < count) {
-        count = 0;
-        clearInterval(intervalId);
-        running = false;
-        return;
-    }
-    console.log("STEP" + count);
     //Pick a random element and change its id so it is glowing
     let randomIndex = getRandomInt(vacations.length);
     let randomVacation = vacations[randomIndex];
     let imageElement = document.getElementsByName(randomVacation.name)[0];
-    console.log(imageElement);
     imageElement.id = "select-image";
-    console.log("STEP" + count);
+
+    //Update Center Top Text to display the name of vacation;
+    let centerTopTextElement = document.getElementsByName("center-top")[0];
+    centerTopTextElement.textContent = randomVacation.name;
+
     count++;
     previousSelectedImageElement = imageElement;
+
+    //Stop loop
+    if (MAX_RANDOM_COUNT < count) {
+        count = 0;
+        clearInterval(randomIntervalId);
+        running = false;
+        centerTopTextElement.id = "center-top";
+    return;
+    }
 }
+
 
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 function getRandomInt(max) {

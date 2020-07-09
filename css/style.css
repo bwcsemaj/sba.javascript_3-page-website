@@ -1,9 +1,38 @@
+* {
+    /*https://stackoverflow.com/questions/7008039/css-html5-why-does-my-body-have-a-spacing-at-the-top*/
+    /* margin: 0px;
+    padding: 0px;
+    border-width: 0px; */
+    /*https://stackoverflow.com/questions/30489594/prevent-100vw-from-creating-horizontal-scroll/30504010*/
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+}
+
 body {
-    background-color: navy;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgb(128, 7, 7) 0.0%, rgb(255, 50, 100) 100.0%);
+    padding: 0px;
 }
 
-
-object {
-    height: 100vh;
-    width: 100vh;
+/* START TOP NAVIGATION */
+#top-navigation-container{
+    background-color: red;
+    height: 65px;
 }
+#logo{
+    height: 65px;
+    width: 65px;
+}
+/* Scale images  https://stackoverflow.com/questions/16217355/automatically-resize-images-with-browser-size-using-css*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* END TOP NAVIGATION */

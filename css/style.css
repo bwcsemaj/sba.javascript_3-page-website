@@ -11,13 +11,14 @@ html {
     height: 100%;
     width: 100%;
     text-align: center;
+    background: black !important;
     padding: 0px;
 }
 
 body {
     height: 100%;
     width: 100%;
-    background: linear-gradient(rgb(255, 255, 255) 0.0%, rgb(129, 217, 233) 100.0%);
+    background: black !important;
     padding: 0px;
 }
 

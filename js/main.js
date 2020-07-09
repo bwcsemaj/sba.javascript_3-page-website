@@ -35,7 +35,9 @@ window.onload = (event) => {
             return;
         }
         running = true;
-        console.log(running);
+        //Make mouse transparent for Center
+        let centerContainerElement = document.getElementById("center-container");
+        centerContainerElement.style = "pointer-events:none;"
         randomIntervalId = setInterval(randomStep, 500);
     };
 
@@ -77,7 +79,9 @@ function randomStep() {
         clearInterval(randomIntervalId);
         running = false;
         centerTopTextElement.id = "center-top";
-        return;
+        let centerContainerElement = document.getElementById("center-container");
+        centerContainerElement.style = "pointer-events:all;"
+                return;
     }
 }
 

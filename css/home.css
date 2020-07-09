@@ -1,22 +1,31 @@
-#select-image{
+#select-image {
     box-shadow: white;
     opacity: 1;
 }
+
 img {
     max-width: 100%;
     height: auto;
 }
 
-.center-holder{
+.center-holder {
     position: relative;
 }
 
-#center-container{
+#center-container {
     z-index: 1;
     position: absolute;
 }
 
-#center-top{
+#center-container:hover {
+    opacity: .9;
+}
+
+#center-container:active {
+    opacity: .5;
+}
+
+#center-top {
     z-index: 2;
     position: relative;
     text-align: center;
@@ -33,10 +42,11 @@ img {
     animation-timing-function: linear;
 }
 
-@keyframes show{
-    from { 
+@keyframes show {
+    from {
         opacity: 0;
-    } to { 
+    }
+    to {
         opacity: 1;
     }
 }

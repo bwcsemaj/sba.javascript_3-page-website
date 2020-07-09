@@ -8,6 +8,7 @@
     /*https://stackoverflow.com/questions/30489594/prevent-100vw-from-creating-horizontal-scroll/30504010*/
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+/*     user-select: none; */
 }
 
 html {
@@ -23,6 +24,10 @@ body {
     width: 100%;
     background: black !important;
     padding: 0px;
+}
+
+p{
+    background: black;
 }
 
 /* START TOP NAVIGATION */

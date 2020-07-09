@@ -66,63 +66,75 @@
     <!-- Major help came from https://mdbootstrap.com/docs/jquery/forms/contact/ -->
     <br><br>
     <div class="container">
-        <div class="container col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
-            <div class="col">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="background: darkgray; border-radius: 10px;">
-                    <div class="row"></div>
-                    <h2 class="h1 text-center"><b>CONTACT FORM</b></h2>
-            
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <form id="contact-form">
-                                <div class="row">
-                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                        <div class="form">
-                                            <input type="text" id="name" name="name" class="form-control" placeholder="NAME">
+        <div class="row">
+            <div class="container col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/avjof2Izqq8?start=8" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="container col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"
+                        style="background: darkgray; border-radius: 10px;">
+                        <div class="row"></div>
+                        <h2 class="h1 text-center"><b>CONTACT FORM</b></h2>
+    
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <form id="contact-form">
+                                    <div class="row">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                            <div class="form">
+                                                <input type="text" id="name" name="name" class="form-control"
+                                                    placeholder="NAME">
+                                                <br>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                            <div class="form">
+                                                <input type="text" id="email" name="email" class="form-control"
+                                                    placeholder="EMAIL">
+                                                <br></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <select id="subject" class="form-control">
+                                                <option selected>QUESTION</option>
+                                                <option>COMPLAINT</option>
+                                                <option>DAB</option>
+                                            </select>
                                             <br>
                                         </div>
                                     </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                        <div class="form">
-                                            <input type="text" id="email" name="email" class="form-control" placeholder="EMAIL">
-                                            <br></div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                        <select id="subject" class="form-control">
-                                            <option selected>QUESTION</option>
-                                            <option>COMPLAINT</option>
-                                            <option>DAB</option>
-                                        </select>
-                                        <br>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                        <div class="md-form">
-                                            <textarea type="text" id="description" name="description" rows="2"
-                                                class="form-control lg-textarea"
-                                                placeholder="ENTER A DESCRIPTION OF YOUR PROBLEM..."></textarea>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="md-form">
+                                                <textarea type="text" id="description" name="description" rows="2"
+                                                    class="form-control lg-textarea"
+                                                    placeholder="ENTER A DESCRIPTION HERE..."></textarea>
+                                            </div>
+                                            <br>
                                         </div>
-                                        <br>
                                     </div>
+                                </form>
+    
+                                <div class="text-center">
+                                    <a class="btn btn-primary"
+                                        onclick="document.getElementById('contact-form').submit();">SEND</a>
                                 </div>
-                            </form>
-            
-                            <div class="text-center">
-                                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">SEND</a>
+                                <div class="status"></div>
                             </div>
-                            <div class="status"></div>
+    
                         </div>
-            
+    
                     </div>
-            
                 </div>
-            </div>
+        </div>
+       
         </div>
     </div>
-       
+
 
     <!-- END CENTER CONTENT -->
 

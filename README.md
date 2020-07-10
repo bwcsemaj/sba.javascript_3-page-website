@@ -25,7 +25,7 @@ Purpose of the website is to pick a random state for the user to vacation to tha
   * ~~Dropped Down Menu~~ 
   * ~~Use web fonts~~
   * ~~Use different types of content in the form of text, images, videos, and GIFs~~
-  * Use regex validation
+  * ~~Use regex validation~~
 
 * CSS
   * ~~Inline, internal, and external styling~~

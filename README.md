@@ -1,6 +1,8 @@
 # Vacation State Picker
 Purpose of the website is to pick a random state for the user to vacation to that has a destination worth going to. Photos selected are random stock photos which may not correlate to the state they represent at this time. In order to provide feedback there is a Contact page where you can enter various information about yourself and expect to be able to receive a response. Finally the About page is meant to give more information about the project/team/whatever behind. As this moment it doesn't reflect anything but nonsense.
 
+- Access my site by navigating to the following link https://bwcsemaj.github.io/sba.javascript_3-page-website/
+
 ## Languages:
 - JavaScript
 - HTML

@@ -28,7 +28,7 @@ Purpose of the website is to pick a random state for the user to vacation to tha
 
 * CSS
   * ~~Inline, internal, and external styling~~
-  * Use five different CSS selectors
+  * ~~Use five different CSS selectors~~
   * ~~Don’t use too many fonts~~
   * ~~Use colors that complement each other~~
   * Use Flexbox (Optional)

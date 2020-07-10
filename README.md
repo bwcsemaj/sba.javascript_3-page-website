@@ -12,8 +12,7 @@ Purpose of the website is to pick a random state for the user to vacation to tha
 - Bootstrap
 
 ## Features 
-- Has three pages taking advantage of Bootstrap grid system
-- Uses over 10 different HTML tags 
+- Able to randomly pick a state within the selected locations and display this information to the user.
 
 ## Technical requirements
 

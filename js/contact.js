@@ -1,19 +1,44 @@
 //Contact Validation
-function validateContactForm(){
+function validateContactForm() {
     let statusElement = document.querySelector(".status");
-    var name =  document.getElementById("name").value;
+
+    //Validate Name
+    var name = document.getElementById("name").value;
     if (name == "") {
         statusElement.innerHTML = "Name cannot be empty";
         return false;
     }
 
-    //User Regex to validate email address https://regexr.com/3e48o
-    var email =  document.getElementById("email").value;
-    if (email == "" || !validateEmail(email)){
+    //Validate Email
+    var email = document.getElementById("email").value;
+    if (email == "" || !validateEmail(email)) {
         statusElement.innerHTML = "Invalid email";
         return false;
     }
-    var description =  document.getElementById("description").value;
+
+    //Validate Phone Number
+    var phoneNumber = document.getElementById("phonenumber").value;
+    if (phoneNumber == "" || isNaN(phoneNumber) || phoneNumber.length != 10) {
+        statusElement.innerHTML = "Invalid phone number";
+        return false;
+    }
+
+    //Validate Zip Code
+    var zipCode = document.getElementById("zipcode").value;
+    if (zipCode == "" || isNaN(zipCode) || zipCode.length != 5) {
+        statusElement.innerHTML = "Invalid zip code";
+        return false;
+    }
+
+    //Validate Bip Code
+    var bipCode = document.getElementById("bipcode").value;
+    if (bipCode == "" || isNaN(bipCode) || bipCode.length != 5) {
+        statusElement.innerHTML = "Invalid bip code";
+        return false;
+    }
+
+    //Validate Description
+    var description = document.getElementById("description").value;
     if (description == "") {
         statusElement.innerHTML = "Invalid description";
         return false;

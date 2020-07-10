@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
 * {
     /*https://stackoverflow.com/questions/7008039/css-html5-why-does-my-body-have-a-spacing-at-the-top*/
     /* margin: 0px;
@@ -8,7 +7,7 @@
     /*https://stackoverflow.com/questions/30489594/prevent-100vw-from-creating-horizontal-scroll/30504010*/
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-/*     user-select: none; */
+    /*     user-select: none; */
 }
 
 html {
@@ -26,40 +25,51 @@ body {
     padding: 0px;
 }
 
-nav{
-    height:55px !important;
+nav {
+    height: auto !important;
 }
 
-p{
-    background: black;
+p {
+    background: rgb(4, 5, 22);
+    padding: 5px;
+}
+
+.active {
+    background: rgba(0, 0, 0, .5);
 }
 
 /* START TOP NAVIGATION */
-.nav-item a{
+
+.nav-item a {
     font-size: 1.8em !important;
 }
-#logo{
-    height: 55px;
-    width: 55px;
+
+#logo {
+    height: 45px;
+    width: 45px;
 }
-#logo:hover{
+
+#logo:hover {
     animation-name: spin;
     animation-duration: 4000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
-@keyframes spin{
-    from { 
-        transform: rotate(0deg); 
-    } to { 
-        transform: rotate(360deg); 
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }
 
 /* Scale images  https://stackoverflow.com/questions/16217355/automatically-resize-images-with-browser-size-using-css*/
+
 img {
     max-width: 100%;
     height: auto;
 }
+
 /* END TOP NAVIGATION */

@@ -30,10 +30,9 @@ img {
     position: relative;
     text-align: center;
     color: white;
-    font-size: 5em;
+    font-size: 10em;
     vertical-align: middle;
-    line-height: 5em;
-    box-shadow: white;
+    background-color: rgba(0,0,0,.7);
     opacity: 0;
     pointer-events: none;
     animation-name: show;
@@ -45,6 +44,7 @@ img {
 @keyframes show {
     from {
         opacity: 0;
+        text-shadow: 2px 2px 8px #FF0000;
     }
     to {
         opacity: 1;

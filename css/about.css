@@ -1,9 +1,9 @@
-#paragraphs:first-child{
-    color: pink;
+div > p:first-child{
+    color: rgba(233, 232, 236, 0.233);;
 }
 div > p:nth-child(2){
-    color: red;
+    color: rgba(212, 212, 218, 0.233);;
 }
 div > p:last-child{
-    color: green;
+    color: rgba(170, 167, 194, 0.233);
 }

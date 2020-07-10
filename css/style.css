@@ -72,4 +72,11 @@ img {
     height: auto;
 }
 
+th, td{
+    text-align: center;
+}
+th:nth-child(odd), td:nth-child(odd){
+    background: darkgray;
+}
+
 /* END TOP NAVIGATION */

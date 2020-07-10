@@ -20,7 +20,7 @@ Purpose of the website is to pick a random state for the user to vacation to tha
 * HTML
   * ~~Have at least 3 pages, keep the grid system consistent as much as possible~~
   * ~~Use at least 10 different HTML tags~~
-  * Use HTML tables
+  * ~~Use HTML tables~~
   * ~~Implement at least two uses for forms~~
   * ~~Dropped Down Menu~~ 
   * ~~Use web fonts~~
@@ -31,7 +31,7 @@ Purpose of the website is to pick a random state for the user to vacation to tha
   * ~~Inline, internal, and external styling~~
   * Use five different CSS selectors
   * ~~Don’t use too many fonts~~
-  * Use colors that complement each other
+  * ~~Use colors that complement each other~~
   * Use Flexbox (Optional)
   * Use SASS/SCSS (Optional)
   * ~~Use animations (Optional)~~
